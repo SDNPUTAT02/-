@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDN PUTAT 02</title>
+    <link rel="icon" href="logosd.png" type="image/png"> <!-- Favicon -->
+    <link rel="stylesheet" href="depan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Pemutar musik otomatis -->
+    <audio src="song.mp3" autoplay loop>
+        Your browser does not support the audio element.
+    </audio>
+    <header class="landing-header">
+        
+            <!-- Teks berjalan -->
+        <marquee behavior="scroll" direction="left" scrollamount="7">
+            <h2>Informasi Sekolah Terbaru: Program PPDB dibuka! Daftar sekarang | Bisa Daftar Secara Online <h2>
+        </marquee>
+    
+    
+                <li><a href="#about"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Selamat Datang di SD Negeri PUTAT 02</h2>
+                <p>Wujudkan generasi cerdas, berkarakter, dan berprestasi di lingkungan yang nyaman dan inspiratif.</p>
+                <button onclick="navigateToMain()">klik Masuk sini</button>
+            </div>
+            <div class="hero-image">
+                <img src="logosd.png" alt="SDN Putat 02 Illustration">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Tentang Kami</h2>
+            <p>SDN Putat 02 adalah sekolah yang berdedikasi untuk mencetak generasi penerus bangsa dengan kualitas pendidikan yang unggul, inovasi, dan lingkungan belajar yang menyenangkan.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SDN Putat 02. All rights reserved.</p>
+    </footer>
+    <script>
+        function navigateToMain() {
+            window.location.href = "beranda.html"; // Ganti dengan halaman utama situs Anda
+        }
+    </script>
+     <script src="scrip.js"></script>
+</body>
+</html>

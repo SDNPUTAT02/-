@@ -1,0 +1,169 @@
+/* General Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Layout for Tentang Sekolah Kami */
+.school-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.school-profile {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(48, 48, 48, 0.1);
+}
+.school-info p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    background: linear-gradient(135deg, #f5f7fa, #92e1e498);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.school-info p::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    transform: rotate(45deg);
+    bottom: -10px;
+    left: 20px;
+    z-index: -1;
+    box-shadow: -2px 2px 4px rgba(37, 35, 35, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .school-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .school-profile {
+        width: 100%;
+    }
+    .school-info p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+    .school-info p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .school-profile {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Section Profil Sekolah */
+section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Profil Section */
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-image {
+    flex: 1 1 5%;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text {
+    flex: 1 1 40%;
+    font-size: 0.0rem;
+    line-height: 1.6;
+    color: #1d1d1d;
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    background: linear-gradient(135deg, #f5f7fa, #7eebd998);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+
+.profile-text p {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+}
+
+
+
+.content {flex: 1 1 40%;
+    font-size: 0.0rem;
+    line-height: 1.6;
+    color: #1d1d1d;
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    background: linear-gradient(135deg, #f5f7fa, #4ab2b641);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1);
+    position: relative;}

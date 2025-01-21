@@ -1,0 +1,272 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.landing-header {
+    background: #0056b3;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing-header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.landing-header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.landing-header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.landing-header ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(37, 245, 210, 0.932), rgba(151, 172, 194, 0.8)),
+                url('fotobackground.jpeg') no-repeat center center/cover;
+}
+
+/* Tambahkan font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Oswald:wght@200..700&display=swap');
+
+/* Gunakan font untuk elemen */
+.hero {
+    font-family: 'Oleo Script', sans-serif;
+    color: #ffffff; /* Warna teks */
+    text-align: center;
+}
+
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 2000px;
+}
+
+.hero-content h1 {
+    font-size: 5.5em;
+    margin-bottom: 20px;
+    font-weight: 900; /* Variasi font (bold) */
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content button {
+    background: #ffcc00;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-content button:hover {
+    background: #00f80c;
+    transform: scale(1.2);
+}
+
+.hero-image img {
+    max-width: 80%;
+    filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.2));
+    animation: float 3s ease-in-out infinite;
+ 
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #c5c5c5;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-header ul {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .about p {
+        font-size: 1.1em;
+    }
+}
+
+
+
+
+
+/* Efek visual pada gambar saat musik dimainkan */
+.hero-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    animation: pulse 1.5s infinite alternate; /* Efek pulsing pada gambar */
+}
+
+/* Animasi Pulse: efek berkedip */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        filter: brightness(1);
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+        filter: brightness(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+/* Menambahkan efek audio play background */
+audio {
+    display: none; /* Menyembunyikan kontrol audio */
+}
+
+body {
+    background-color: #00ff4c;
+    transition: background-color 0.5s ease; /* Transisi perubahan warna latar */
+}
+
+/* Saat audio dimainkan, latar belakang berubah */
+audio[autoplay]:not([paused]) ~ body {
+    background-color: #6000fa; /* Ganti dengan warna yang sesuai */
+}
